@@ -1,0 +1,68 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+
+
+
+
+	@media screen and (max-width:767px){
+	.ph-1{width: 8.333333%; float: left; box-sizing: border-box;}
+	.ph-2{width: 16.666666%; float: left; box-sizing: border-box;}
+	.ph-3{width: 25%; float: left; box-sizing: border-box;}
+	.ph-4{width: 33.333333%; float: left; box-sizing: border-box;}
+	.ph-5{width: 41.666666%; float: left; box-sizing: border-box;}
+	.ph-6{width: 50%; float: left; box-sizing: border-box;}
+	.ph-7{width: 58.333333%; float: left; box-sizing: border-box;}
+	.ph-8{width: 66.666666%; float: left; box-sizing: border-box;}
+	.ph-9{width: 75%; float: left; box-sizing: border-box;}
+	.ph-10{width: 83.333333%; float: left; box-sizing: border-box;}
+	.ph-11{width: 91.666666%; float: left; box-sizing: border-box;}
+	.ph-12{width: 100%; float: left; box-sizing: border-box;}
+		
+	}
+	@media screen and (min-width:768px){
+	.tbv-1{width: 8.333333%; float: left; box-sizing: border-box;}
+	.tbv-2{width: 16.666666%; float: left; box-sizing: border-box;}
+	.tbv-3{width: 25%; float: left; box-sizing: border-box;}
+	.tbv-4{width: 33.333333%; float: left; box-sizing: border-box;}
+	.tbv-5{width: 41.666666%; float: left; box-sizing: border-box;}
+	.tbv-6{width: 50%; float: left; box-sizing: border-box;}
+	.tbv-7{width: 58.333333%; float: left; box-sizing: border-box;}
+	.tbv-8{width: 66.666666%; float: left; box-sizing: border-box;}
+	.tbv-9{width: 75%; float: left; box-sizing: border-box;}
+	.tbv-10{width: 83.333333%; float: left; box-sizing: border-box;}
+	.tbv-11{width: 91.666666%; float: left; box-sizing: border-box;}
+	.tbv-12{width: 100%; float: left; box-sizing: border-box;}
+		
+	}
+	@media screen and (min-width:992px){
+	.tbh-1{width: 8.333333%; float: left; box-sizing: border-box;}
+	.tbh-2{width: 16.666666%; float: left; box-sizing: border-box;}
+	.tbh-3{width: 25%; float: left; box-sizing: border-box;}
+	.tbh-4{width: 33.333333%; float: left; box-sizing: border-box;}
+	.tbh-5{width: 41.666666%; float: left; box-sizing: border-box;}
+	.tbh-6{width: 50%; float: left; box-sizing: border-box;}
+	.tbh-7{width: 58.333333%; float: left; box-sizing: border-box;}
+	.tbh-8{width: 66.666666%; float: left; box-sizing: border-box;}
+	.tbh-9{width: 75%; float: left; box-sizing: border-box;}
+	.tbh-10{width: 83.333333%; float: left; box-sizing: border-box;}
+	.tbh-11{width: 91.666666%; float: left; box-sizing: border-box;}
+	.tbh-12{width: 100%; float: left; box-sizing: border-box;}
+		
+	}
+	@media screen and (min-width:1200px){
+	.dsk-1{width: 8.333333%; float: left; box-sizing: border-box;}
+	.dsk-2{width: 16.666666%; float: left; box-sizing: border-box;}
+	.dsk-3{width: 25%; float: left; box-sizing: border-box;}
+	.dsk-4{width: 33.333333%; float: left; box-sizing: border-box;}
+	.dsk-5{width: 41.666666%; float: left; box-sizing: border-box;}
+	.dsk-6{width: 50%; float: left; box-sizing: border-box;}
+	.dsk-7{width: 58.333333%; float: left; box-sizing: border-box;}
+	.dsk-8{width: 66.666666%; float: left; box-sizing: border-box;}
+	.dsk-9{width: 75%; float: left; box-sizing: border-box;}
+	.dsk-10{width: 83.333333%; float: left; box-sizing: border-box;}
+	.dsk-11{width: 91.666666%; float: left; box-sizing: border-box;}
+	.dsk-12{width: 100%; float: left; box-sizing: border-box;}
+		
+	}

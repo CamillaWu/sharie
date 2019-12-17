@@ -1,0 +1,218 @@
+
+*{
+	padding: 0;
+	margin: 0 auto;
+	/*outline: #f00 1px solid;*/
+}
+
+a{
+	text-decoration: none;
+}
+.icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: linear-gradient(0deg, #7bc5ca 0% , #fff 115%);
+}
+.icon img{
+	width: 80%;
+	padding: 4px 0 0 4px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+.aboutUs{
+	max-width: 960px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	background-color: #040d22;
+}
+.aboutUs h2{	
+	font-family: Noto Sans CJK TC;
+	font-size: 40pt;
+	font-weight: 400;
+	letter-spacing: 45pt;
+	color: rgba(255,255,255,.52);
+	padding: 0 0 50px 50px;
+	margin-top: -30px;
+	text-align: center;
+}
+.aboutUs article{
+	width: 60%;
+	color: #fff;
+	font-size: 13pt;
+	font-family: Noto Sans CJK TC;
+	line-height: 1.5;
+	letter-spacing: 1pt;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
+
+.subscribe{
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: rgba(4,13,34,1);
+	padding: 0px 80px;
+}
+.subscribe div{
+	text-align: center;
+	/*background-image: url("starry-sky.jpg");*/
+	padding: 100px 20px;
+}
+.subscribe div input{
+	border: rgba(4,13,34,.6) solid 2px;
+	font-size: 16pt;
+	padding: 10px 20px;
+	font-family: Arial;
+	border-radius: 10px 0 0px 10px;
+	color: #040d22;
+	background-color: rgba(255,255,255,.8);
+}
+.subscribe div button{
+	border: rgba(4,13,34,.6) solid 2px;
+	padding: 10px 0px;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: -14px;
+}
+.subscribe div a{	
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 0px 10px 10px 0px;
+	color: #fff;
+	font-family: Arial;
+	background-color: rgba(4,13,34,.6);
+	font-size: 16pt;
+}
+
+
+
+
+
+
+.sponsor{
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #040d22;
+	padding: 20px 0 150px 0;
+}
+.sponsor h2{
+	color: rgba(255,255,255,.52);
+	margin: 50px 0 60px 0;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.people{
+	text-align: center;
+}
+.people .flip{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+	perspective: 500px;
+}
+.pic{
+	transform: translateX(-100px);
+}
+.info{
+	transform: rotateY(180deg);
+}
+.flip:hover .pic{
+	transform: rotateY(180deg);
+}
+.flip:hover .info{
+	transform: rotateY(360deg);
+}
+.pic, .info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.pic{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	vertical-align: top;
+}
+.pic:before,
+.pic:after{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pic:before{
+	border: 1px #fbcc5d solid;
+	animation: people 5s 1.5s infinite alternate;
+}
+.pic:after{
+	border: 1px #fff solid;
+	animation: people 4s 0.5s infinite alternate;
+}
+@keyframes people{
+			0%{ border-radius: 60% 40% 40% 60% / 63% 60% 40% 37%; }
+			20%{ border-radius: 30% 70% 60% 40% / 20% 55% 45% 80%; }
+			40%{ border-radius: 68%32%30% 70% / 65% 30% 70% 35%; }
+			60%{ border-radius: 40% 60% 55% 45% / 30% 52% 48% 70%; }
+			80%{ border-radius: 46% 56% 63% 37% / 30% 42% 58% 70%; }
+			100%{ border-radius: 58% 42% 30% 70% / 47% 35% 65% 53%; }
+		}
+
+.info{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,.2);
+}
+.info a{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.info span{
+	display: block;
+	margin: 75px 0;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+	width: 100%;
+	background-color: rgba(16,27,60,.8);
+	font-size: 13pt;
+	color: #fff;
+	text-align: center;
+}
+.footer div a{
+	color: #fff;
+}

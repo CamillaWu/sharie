@@ -1,0 +1,156 @@
+
+*{
+	padding: 0;
+	margin: 0 auto;
+	/*outline: #f00 1px solid;*/
+}
+
+a{
+	text-decoration: none;
+}
+.icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: linear-gradient(0deg, #7bc5ca 0% , #fff 115%);
+}
+.icon img{
+	width: 80%;
+	padding: 4px 0 0 4px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+.list{
+	max-width: 900px;
+	margin: 0px auto 0;
+	text-align: center;
+	background-color: #040d22;
+}
+.list ul li{
+	display: inline-block;
+	margin: 5px 15px;
+	list-style: none;
+}
+.list ul li a{
+	color: #fff;
+	transition: .2s;
+}
+.list ul li:hover a{
+	color: #fbcc5d;
+}
+
+
+
+
+
+
+.content{
+	max-width: 900px;
+	margin: 100px auto 200px;
+	background-color: #040d22;
+}
+.info{
+	float: left;
+	width: 40%;
+	height: 400px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.num{
+	position: relative;
+	display: inline-block;
+	padding: 13px 15px;
+	font-weight: 600;
+	vertical-align: top;
+	color: #fff;
+}
+.num:after{
+	position: absolute;
+	top: 18px;
+	right: 0px;
+	content: '';
+	width: 2px;
+	height: 30px;
+	background-color: rgba(255,255,255,.6);
+}
+.theather div{
+	display: inline-block;
+	padding: 10px 10px;
+}
+.theather h5 a{
+	display: inline-block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 500;
+	transition: .3s;
+}
+.theather h5:hover a{
+	color: #fbcc5d;
+}
+.adress{
+	display: block;
+	font-size: 13pt;
+	font-weight: 300;
+	padding: 5px 0;
+	color: rgba(255,255,255,.7);
+}
+.tel{
+	display: block;
+	font-size: 12pt;
+	color: rgba(255,255,255,.7);
+}
+.arrow a{
+	display: inline-block;
+	padding: 30px 7px;
+	vertical-align: bottom;
+	transition: .2s;
+}
+.arrow:hover a{
+	padding-left: 15px;
+}
+.theather img{
+	vertical-align: top;
+}
+
+
+
+
+
+.map{
+	display: inline-block;
+	width: 55%;
+	text-align: center;
+	padding: 0 15px;
+}
+
+
+
+
+
+
+.footer{
+	width: 100%;
+	background-color: rgba(16,27,60,.8);
+	font-size: 13pt;
+	color: #fff;
+	text-align: center;
+}
+.footer div a{
+	color: #fff;
+}
+
+
+/*
+.backTop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #dbaf5b;
+}*/
