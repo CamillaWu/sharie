@@ -1,0 +1,353 @@
+
+	@media screen and (max-width:650px){		
+		h1{
+			padding:  0 0 0px 20px;	
+		}
+	}
+	section{
+		position: relative;
+		max-width: 1100px;
+		margin: 0 auto 100px;
+	}
+	.info{
+		position: relative;
+	}
+
+	.flim{
+		position: relative;
+		max-width: 900px;
+		width: 80%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	.flim + .flim{
+			display: none;
+	}
+	@media screen and (max-width:992px){
+		.flim + .flim{
+			display: block;
+		}
+		.flim{
+			margin: 100px auto;
+		}
+	}
+	@media screen and (max-width:425px){
+		.flim{
+			margin: 120px auto;
+		}
+	}
+	.left{
+		position: relative;
+		max-height: 600px;
+	}
+	.left .pic{
+		max-width: 60%;
+		margin: auto;
+		padding: 50px 0;
+	}
+	.fixPic{
+		position: relative;
+		width: 100%;
+	}
+	@media screen and (min-width:993px){
+		.left .pic img{
+			max-width: 100%;
+			max-height: 400px;
+		}
+		.fixPic:hover :before{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,.1);
+		}
+	}
+	@media screen and (max-width:992px){		
+		.left .pic{
+			max-width: 70%;
+			text-align: center;
+		}
+		.left .pic img{
+			max-width: 100%;
+			max-height:500px;
+		}
+	}
+	@media screen and (max-width:650px){		
+		.left .pic{
+			max-width: 90%;
+		}
+	}
+	@media screen and (max-width:425px){		
+		.left .pic{
+			padding: 20px 0 ;
+		}
+	}
+
+	.flim:nth-of-type(1) .background{
+		background-image: url("img/poster1BG.png");
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+	}
+	.flim .background{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -2;
+		width: 100%;
+		height: 100%;
+		opacity: .3;
+	}
+	@media screen and (max-width:992px){	
+		#first{
+			content: url('img/poster1.png');
+		}	
+		.flim .background{
+			display: none;
+		}
+		.flim .RWDbackground{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -2;
+			width: 100%;
+			height: 100%;
+			opacity: .3;
+		}
+		.flim:nth-of-type(1) .RWDbackground{
+			background-image: url("img/poster1BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(2) .RWDbackground{
+			background-image: url("img/poster2BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(3) .RWDbackground{
+			background-image: url("img/poster3BG.jpg");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(4) .RWDbackground{
+			background-image: url("img/poster4BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(5) .RWDbackground{
+			background-image: url("img/poster5BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(6) .RWDbackground{
+			background-image: url("img/poster6BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.flim:nth-of-type(7) .RWDbackground{
+			background-image: url("img/poster7BG.png");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+	}		
+	.right{
+		position: relative;
+		padding: 0px 0px 50px 80px;
+		color: rgba(255,255,255,.9);
+	}
+	@media screen and (max-width:992px){
+		.right{
+			padding: 0px 50px;
+		}	
+	}
+	@media screen and (max-width:425px){
+		.right{
+			padding: 0px 20px;
+		}	
+	}
+	.right .caption{
+		font-size: 17px;
+		color: rgba(255,255,255,.6);
+		line-height: 30px;
+	}
+	.right h3,
+	.right h4{
+		font-size: 19px;
+		font-weight: 300;
+	}
+	.right h3 span,
+	.right h4 span{
+		margin-right: 10px;
+	}
+	.right h3 img{
+		max-width: 18px;
+		vertical-align: middle;
+		margin: 0 2px;
+	}
+	.right p{
+		display: block;
+		font-size: 18px;
+		font-weight: 100;
+		line-height: 27px;
+		margin-bottom: 17px;
+	}
+	@media screen and (max-width:992px){
+		.right p{
+			margin-bottom: 70px;
+		}	
+	}
+	@media screen and (max-width:425px){
+		
+		.right .caption{
+			font-size: 16px;
+		}
+		.right h3,
+		.right h4{
+			font-size: 17px;
+		}
+		.right h3 img{
+			max-width: 17px;
+		}
+		.right p{
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+	.share{
+		position: absolute;
+		bottom: 10px;
+		left: 80px;
+	}
+	.share i{
+		padding: 0 5px;
+	}
+	.readMore{
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+	.readMore a{
+		display: block;
+		color: #fbcc5d;
+		font-size: 18px;
+		padding: 3px 10px;
+		border: 1px rgba(255,255,255,.0) solid;
+	}
+	.readMore:hover a,
+	.readMore:focus a{
+		border: 1px rgba(255,255,255,.2) solid;
+	}
+	@media screen and (max-width:992px){
+		.share{
+			left: 50px;
+			bottom: 20px;
+		}
+		.readMore{
+			right: 50px;
+			bottom: 20px;
+		}
+	}
+	@media screen and (max-width:425px){
+		.share{
+			left: 20px;
+			font-size: 19px;
+		}
+		.readMore{
+			right: 20px;
+		}
+		.readMore a{
+			font-size: 14px;
+		}
+	}
+	.posterView{
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90px;
+		height: 452px;
+		overflow: hidden;
+	}
+	@media screen and (max-width:992px){
+		.posterView{
+			display: none;
+		}
+	}	
+	.posterContainer{
+		width: 100%;
+		margin-top: 12px;
+	}
+	.smallPoster{
+		border: 2px solid rgba(255,255,255,0);
+	}
+	.smallPoster:hover{
+		border: 2px solid #fff;
+		cursor: pointer;
+	}
+	.smallPoster img{
+		width: 85px;
+		height: 130px;
+	}
+	.topArrow,
+	.bottomArrow{
+		margin: auto;
+	}
+	.bottomArrow{
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 2px;
+		width: 37px;
+	}
+	.topArrow div,
+	.bottomArrow div{
+		display: block;
+		width: 13px;
+		height: 13px;
+		border: rgba(255,255,255,.4) 2px solid;
+		border-radius: 50%;
+		margin: 0  auto 5px;
+		text-align: center;
+		padding: 10px;
+	}
+	.topArrow i,
+	.bottomArrow i{
+		vertical-align: top;
+		font-size: 20px;
+		transform: translate(-3px, -5px);
+	}
+	.topArrow:hover div,
+	.bottomArrow:hover div{
+		background-color: rgba(255,255,255,.3);
+		color: #fff;
+		cursor: pointer;
+	}
+	@media screen and (max-width:992px){
+		.bottomArrow{
+			display: none;
+		}
+	}
+
+
+	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<title>Examples</title>
+<link rel="stylesheet" type="text/css" href="movie-info-RWD.css">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Sharie揪影趣</title>
+<link rel="icon" href="img/Logo.png" type="image/icon">
+<!-- <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"> -->
+<script src="jquery-3.2.1.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script>
+
+	$(document).ready(function(){
+		if(screen.width>992){
+			var test = $(this).attr('rightContent');
+			// alert(test);
+			$('.smallPoster img').click(function(){
+				var bgImg = $(this).attr('bgImg');
+				var bigPoster = $(this).attr('src');
+				$('.flim:nth-of-type(1) .left .pic img').attr('src', bigPoster );
+				$('.flim:nth-of-type(1) .left .background').css('backgroundImage','url('+bgImg+')' );
+			});
+		}
+	});
+</script>
+</head>
+<body>
+    	<header>
+    		<nav>			
+    			<div class="center clearfix">
+    						<div class="nav-logo">
+    							<a href="index.html">
+    								<figure class="logo">
+    									<img src="img/Logo.png" alt="#">	
+    								</figure>
+    							</a>
+    						</div>				
+    						<input type="checkbox" name="" id="menuControl">		
+    						<div class="mainMenu clearfix">
+    							<ul>
+    								<li class="title"><a data-hovertext="Sharie"
+    									href="Sharie-RWD.html">揪影趣</a></li>
+    								<li class="title"><a data-hovertext="Reviews" href="review-RWD.html">影評分享</a></li>
+    								<li class="title"><a data-hovertext="Movie" href="movie-info-RWD.html">電影資訊</a></li>
+    								<li class="title"><a data-hovertext="Cinemas" href="cinema-info-RWD.html">影院資訊</a></li>
+    								<li class="title"><a data-hovertext="AboutUs" href="aboutus-RWD.html">關於我們</a></li>
+    								<li><a href="#"><i class="fa fa-search" ria-hidden="true"></i></a></li>
+    								<li><a class="regi" href="#">註冊</a></li>
+    								<li><a class="login" href="#">登入</a></li>
+    							</ul>
+    						</div>
+    						<div class="rwdnav">
+    							<div class="rwdlogo">
+    								<a href="index.html"><img src="img/rwdlogo2.png"></a>
+    							</div>
+    							<div class="rightnav">
+    								<a href="#"><i class="fa fa-search" ria-hidden="true"></i></a>
+    							<label for="menuControl" class="menuLabel">	
+    							</label>
+    							</div>
+    						</div>
+    			</div>
+    		</nav>
+    	</header>
+	
+	
+	<h1>電影資訊</h1>
+
+	<section>
+		<div class="info">
+				<div class="flim clearfix ">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster1.png" alt="Inception poster" id="first"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim1">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">全面啟動 Inception</a>
+							</h3> 
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span>
+								<a href="#">動作 Action</a>
+							</h4>
+							<h4>
+								<span class="caption">時長:</span>
+								2h 10m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>唐姆·柯柏是一名「盜夢者」，與搭檔亞瑟利用潛意識進入別人夢境竊取商業機密。 於一次任務中，柯柏與亞瑟入侵日本國際企業老闆齋藤的夢境意識，但柯柏的已故妻子茉兒於夢中出現使任務失敗。齋藤事後透露自己是有意讓他們潛入以考驗二人技術，並安排了一個任務予他們：齋藤的商業對手莫瑞斯·費雪病篤...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster2.png" alt="It poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim2">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">牠 It</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star2.png" alt="">
+								<img src="img/star2.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span>
+								<a href="#">恐怖 Horror</a>
+							</h4>
+							<h4><span class="caption">時長:</span>
+								1h 35m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>當緬因州德利鎮的兒童開始消失，警方不得不下令在每天的晚間七點後進行宵禁。鎮上一群孩子們看到一名不尋常的「小丑」，「牠」似乎與德利鎮兒童們的消失有直接關係，他們甚至發現「牠」在這個小鎮上不是第一次出現，似乎每27年都會出現一次...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster3.jpg" alt="Okja poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim3">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">玉子 Okja</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star2.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span>
+								<a href="#">冒險 Adventure</a>
+							</h4>
+							<h4>
+								<span class="caption">時長:</span>
+								1h 32m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>講述了巨大生物「玉子」和與它一起在山谷長大的少女美子之間結下真摯友誼並展開奇異征程的故事。 本來玉子是一間公司的比賽產品，因比賽快將完結，玉子需要回到公司接受評分而離開少女美子。因為對玉子的不捨令美子抱著必死的決心踏上了尋找玉子的征程...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster4.png" alt="Pan's Labyrinth poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim4">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">羊男的迷宮 Pan's Labyrinth</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star2.png" alt="">
+							</h3>
+							<h4><span class="caption">類型:</span>
+								<a href="#">奇幻 Fantacy</a>
+							</h4>
+							<h4><span class="caption">時長:</span>
+								1h 59m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>故事看似是由奧菲莉亞創造出的一個充滿幻想、奇幻的虛構世界，然而從劇情、角色的樣態、色調等卻都顯露出殘酷又陰森的氣息。 11歲的奧菲莉亞跟著母親投靠繼父--上尉維多，上尉與游擊隊間進行的戰火林立讓奧菲莉亞恐懼的只能躲進自己的幻想世界--被精靈帶進迷宮，並在那裡遇到牧神（潘）...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster5.png" alt="Requiem for a Dream poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim5">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">噩夢輓歌 Requiem for a Dream</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span>
+								<a href="#">劇情 Drama</a>
+							</h4>
+							<h4><span class="caption">時長:</span>
+								1h 42m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>本片描述四位主角(家庭主婦莎拉、她的兒子哈利、哈利的女友瑪麗安、以及哈利的朋友泰倫各自的人生，在三個季節之內所產生的巨大變化。住在布魯克林的年老孤獨的寡婦莎拉終日以看電視為樂。當有一天莎拉接到電視台打來的電話時，她開始以為自己會上節目，於是試圖打扮自己使自己變年輕...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster6.png" alt="君の名は。your name poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim6">
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">你的名字 君の名は。 -your name.-</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star2.png" alt="">
+								<img src="img/star2.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span>
+								<a href="#">動畫 Animation</a>
+							</h4>
+							<h4>
+								<span class="caption">時長:</span>
+								1h 52m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>迪亞馬特彗星每逢1200年造訪地球，在深山小鎮糸守町中家族世代經營鎮內「宮水神社」的高中少女宮水三葉、以及東京四谷的高中少年立花瀧，從某天開始，在睡覺的時候，就會靈魂互換，醒來什麼都不記得，感覺像做了奇妙的夢，但周圍的人會講出他們昨天有違平常。他倆很快意識到這種情形，困惑之中...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+				<div class="flim clearfix">
+					<div class="left ph-12 tbv-12 tbh-6">
+						<div class="pic">
+							<figure class="fixPic"><a href="#"><img src="img/poster7.png" alt="Spider-Man: Homecoming poster"></a></figure>
+						</div>
+						<div class="background"></div>
+					</div>
+					<div class="right ph-12 tbv-12 tbh-6">
+						<div class="intro" id="flim7">
+							
+							<h3>
+								<span class="caption">片名:</span>
+								<a href="#">蜘蛛人：返校日 Spider-Man: Homecoming</a>
+							</h3>  
+							<h3>
+								<span class="caption">星等:</span>
+							
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star2.png" alt="">
+							</h3>
+							<h4>
+								<span class="caption">類型:</span><a href="#">動作 Action</a>
+							</h4>
+							<h4>
+								<span class="caption">時長:</span>2h 15m
+							</h4>
+							<span class="caption">簡介:</span>
+							<p>紐約戰役過後，亞德里安·圖姆斯和他的工程隊負責城市善後清理工作，但由東尼·史塔克與美國政府合作成立的「災害控制局」強行接管了他們的工作。心生不滿的圖姆斯決定和他的團隊，靠一部分收集但未歸還的齊塔瑞武器殘骸來謀生。八年後，圖姆斯靠一雙他親自研製的鋼鐵機械翅膀...</p>
+							<div class="share">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="readMore"><a href="#">READ MORE</a></div>
+						</div>
+					</div>
+					<div class="RWDbackground"></div>
+				</div>
+		
+			<div class="posterView">
+				<div class="topArrow">
+					<div><i class="fa fa-chevron-up" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="posterContainer">
+					<div class="smallPoster smallPic1">
+						<img src="img/poster1.png" alt="Inception poster" rightContent="content1" bgImg="img/poster1BG.png">
+					</div>
+					<div class="smallPoster smallPic2">
+						<img src="img/poster2.png" alt="poster2" rightContent="content2" bgImg="img/poster2BG.png">
+					</div>
+					<div class="smallPoster smallPic3">
+						<img src="img/poster3.png" bgImg="img/poster3BG.jpg" rightContent="content3" alt="Okja poster">
+					</div>
+					<div class="smallPoster smallPic4">
+						<img src="img/poster4.png" bgImg="img/poster4BG.png" rightContent="content4" alt="Pan's Labyrinth poster">
+					</div>
+					<div class="smallPoster smallPic5">
+						<img src="img/poster5.png" bgImg="img/poster5BG.png" rightContent="content5" alt="Requiem for a Dream poster">
+					</div>
+					<div class="smallPoster smallPic6">
+						<img src="img/poster6.png" bgImg="img/poster6BG.png" rightContent="content6" alt="君の名は。your name poster">
+					</div>
+					<div class="smallPoster smallPic7">
+						<img src="img/poster7.png" bgImg="img/poster7BG.png" rightContent="content7" alt="Spider-Man: Homecoming poster">
+					</div>
+				</div>
+			</div>
+				<div class="bottomArrow">
+					<div><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+				</div>
+		</div>
+	</section>
+
+
+	<footer>		
+    	<div>
+    		<a href="#">About us</a> ·
+    		<a href="#">Privacy</a> ·
+    		<a href="#">Terms</a> ·
+    		<a href="#">Contact us</a>
+    	</div>
+		<span>Sharie Co., LTD All Rights reserved © 2017</span>
+   
+	</footer>	
+
+	<script type="text/javascript">
+		function $name(name) {
+			return document.getElementsByClassName(name);
+		}
+
+		window.onload = function() {
+			
+			$name("topArrow")[0].onclick = function() {
+				var posterContainer = $name("posterContainer")[0];
+				var smallPoster = $name("smallPoster");
+				posterContainer.insertBefore(smallPoster[1],smallPoster[0]);
+				posterContainer.insertBefore(smallPoster[2],smallPoster[1]);
+				posterContainer.insertBefore(smallPoster[3],smallPoster[2]);
+				posterContainer.insertBefore(smallPoster[4],smallPoster[3]);
+				posterContainer.insertBefore(smallPoster[5],smallPoster[4]);
+				posterContainer.insertBefore(smallPoster[6],smallPoster[5]);
+			}
+			$name("bottomArrow")[0].onclick = function() {
+				var posterContainer = $name("posterContainer")[0];
+				var smallPoster = $name("smallPoster");
+				posterContainer.insertBefore(smallPoster[6],smallPoster[0]);
+				posterContainer.insertBefore(smallPoster[0],smallPoster[1]);
+				posterContainer.insertBefore(smallPoster[1],smallPoster[2]);
+			}
+
+		}
+
+	</script>
+
+	<script>
+		$(function(){
+		    var len = 150; // 超過n個字以"..."取代
+		    $(".right p").each(function(i){
+		        if($(this).text().length>len){
+		            $(this).attr("title",$(this).text());
+		            var text=$(this).text().substring(0,len-1)+"...";
+		            $(this).text(text);
+		        }
+		    });
+		});
+	</script>
+
+	<script>
+		  function lock_scroll(){
+			  var scrollPosition = [
+			    self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+			    self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+			  ];
+			  var body = jQuery('body');
+			  body.data('scroll-position', scrollPosition);
+			  body.data('previous-overflow', body.css('overflow'));
+			  body.css('overflow', 'hidden');
+			  window.scrollTo(scrollPosition[0], scrollPosition[1]);
+			  //it would make more sense to apply this to body,
+			  //but IE7 won't have that.
+		  }
+		  function unlock_scroll(){
+		  	  var body = jQuery('body');
+			  var scrollPosition = body.data('scroll-position');
+			  body.css('overflow', body.data('previous-overflow'));
+			  window.scrollTo(scrollPosition[0], scrollPosition[1])
+		  }
+		  $(document).ready(function(){
+		  		 $("#menuControl").click(function(){
+		  		 	if($("#menuControl").prop("checked")==true){
+		  		 		lock_scroll();
+		  		 	}
+		  		 	else{
+		  		 		unlock_scroll();
+		  		 	}
+	             });
+		  });
+	</script>
+</body>
+</html>

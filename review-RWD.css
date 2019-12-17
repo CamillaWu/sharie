@@ -1,0 +1,301 @@
+
+	@media screen and (max-width:650px){		
+		h1{
+			padding:  0 0 40px 20px;		
+		}
+	}
+
+
+
+
+
+	.hottestReview{
+		max-width: 1200px;
+		width: 80%;
+		margin: 0 auto;		
+	}
+	.leftBox{
+		margin: 50px 0 0px;
+		padding: 0 80px 0 0px;
+	}
+	@media screen and (max-width:767px){
+		.leftBox{
+			padding: 0 0px 0 0px;
+		}
+	}
+	.leftReview h2{
+		position: relative;
+		font-size: 40px;
+		font-weight: 400;
+		color: rgba(255,255,255,.7);
+		padding: 20px 0;
+	}
+	.leftReview h2:before{
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: 0;
+		content: 'The Hottest';
+		display: block;
+		font-size: 4vw;
+		color: rgba(255,255,255,.1);
+	}
+	.context{
+		background-color: rgba(255,255,255,.8);
+		color: rgba(0,0,0,.9);
+	}
+	.context + .context{
+		margin: 50px 0;		
+	}
+	.context .pic{
+		max-width: 100%;
+	}
+	.context .pic img{
+		max-width: 100%;
+	}
+	.arti{
+		padding: 25px;
+	}
+	.arti h4{
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	.arti .caption{
+		display: block;
+		letter-spacing: 2px;
+	}
+	.arti .caption a{
+		color: rgba(0,0,0,.6);
+	}
+	@media screen and (max-width:425px){
+		.arti .caption a{
+			font-size: 20px;
+		}	
+	}	
+	.arti .caption:hover a,
+	.arti .caption:focus a{
+		color: #CA8A23;
+	}
+	.arti .author{
+		position: relative;
+		font-size: 17px;
+		letter-spacing: 1px;
+		margin: 0 25px 0 35px;
+		font-style: italic;
+	}
+	.arti .author:before{
+		position: absolute;
+		top: 0px;
+		left: -35px;
+		content: 'By';
+		font-style: italic;
+		color: rgba(0,0,0,.7);
+	}
+	.arti .author:after{
+		position: absolute;
+		top: 12px;
+		right: -18px;
+		content: '';
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,.3);
+	}
+	.arti .author a{
+		color: rgba(0,0,0,.8);
+	}
+	.arti .author:hover a,
+	.arti .author:focus a{
+		color: #CA8A23;
+	}
+	.arti .date{
+		font-size: 17px;
+		color: rgba(0,0,0,.8);
+		font-style: italic;
+	}
+	@media screen and (max-width:425px){		
+		.arti .date{
+			font-size: 16px;
+		}
+		.arti .author{
+			font-size: 16px;
+			margin: 0 11px 0 35px;
+		}
+		.arti .author:after{
+			right: -12px;
+			content: '';
+		}
+	}
+	.arti p{
+		font-size: 19px;
+		line-height: 28px;
+		letter-spacing: 3px;
+		font-weight: 400;
+		color: rgba(0,0,0,.9);
+	}
+	@media screen and (max-width:425px){
+		.arti p{
+			font-size: 17px;
+		}
+	}	
+	.readMore{
+		margin: 10px 0 -15px 0;
+		text-align: right;	
+	}
+	.readMore a{
+		color: #CA8A23;
+		padding: 2px 15px;
+		font-size: 18px;
+		border: 1px solid rgba(0,0,0,0) ;
+	}
+	.readMore:hover a{
+		color: #5D0009;
+		border: 1px solid rgba(0,0,0,.3) ;
+	}
+	.other{
+		padding: 10px 20px;
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+	
+	.viewer{
+		font-size: 16px;
+		font-weight: 500;
+		color: rgba(0,0,0,.8);
+	}
+	.comment{
+		font-size: 16px;
+		font-weight: 500;
+		margin-left: 10px;
+		color: rgba(0,0,0,.8);
+	}
+	.share{
+		float: right;
+	}
+	@media screen and (max-width:992px){
+		.viewer{
+				display: block;
+				padding-left: 10px;
+		}
+	}
+	@media screen and (max-width:425px){
+		.other{
+			padding: 10px 5px;
+		}
+		.viewer{
+				font-size: 14px;
+			}
+		.comment{
+			font-size: 14px;
+		}
+		.share{
+			font-size: 17px;
+			margin-right: 10px;
+		}
+	}
+	.share i{
+		color: rgba(0,0,0,.7);	
+		transition: .5s;	
+	}
+	.share i:hover,
+	.share i:focus{
+		color: #CA8A23;
+	}
+	.viewer i,
+	.share i,
+	.comment i{
+		padding: 0 3px;
+	}
+	.rightReview{
+		display: block;
+	}
+	@media screen and (max-width:767px){
+		.rightReview{
+			display: none;
+		}
+	}
+	.rightBox{
+		margin: 150px 0 0 0px;
+	}
+	.rightReview h2{
+		position: relative;
+		font-size: 25px;
+		font-weight: 400;
+		color: rgba(255,255,255,.7);
+		padding: 10px 0 10px 0;
+	}
+	.rightReview h2:before{
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: 0;
+		content: 'The newest';
+		display: block;
+		font-size: 2vw;
+		color: rgba(255,255,255,.1);
+	}
+	.newestPost h4{
+		margin: 20px 0 20px 0px;
+	}
+	.newestPost .caption{
+		position: relative;
+		display: block;
+		font-size: 17px;
+		font-weight: 400;
+		padding-left: 5px;
+		border-left: #fff 2px solid;
+	}
+	.newestPost .author{
+		position: relative;
+		margin:0 25px 0 45px;
+		font-size: 15px;
+		font-weight: 300;
+	}
+	.newestPost .author:after{
+		position: absolute;
+		top: 12px;
+		right: -16px;
+		content: '';
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: rgba(255,255,255,.4);
+	}
+	.newestPost .author:before{
+		position: absolute;
+		top: 0px;
+		left: -25px;
+		content: 'By';
+		font-style: italic;
+	}
+	.newestPost .date{
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,348 @@
+
+
+	@media screen and (max-width:650px){		
+		h1{
+			padding:  0 0 0px 20px;	
+		}
+	}
+
+	.recomPost{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.fixRecom{
+		
+	}
+	.recomPost .post{
+		padding: 0 20px;
+		text-align: center;
+	}
+	.recomPost .postLink:hover{
+		color: #fff;
+	}
+	.recomPost .pic{
+		position: relative;
+	}
+	.recomPost .pic:before{
+		position: absolute;
+		content: attr(data-text);
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		letter-spacing: 2px;
+		font-weight: 400;
+		background-color: rgba(0,0,0,.7);
+	}
+	.recomPost .pic img{
+		width: 100%;
+	}
+	.recomPost .info{
+
+	}
+	.recomPost .poster{
+	}
+	.recomPost .poster a{
+		display: block;
+		/*width: 40%;*/
+		margin: 0 auto;
+	}
+	.recomPost .person{
+		width: 40px;
+		margin: 10px auto 0 auto;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+	.recomPost .person img{ 
+		width: 100%;
+	}
+	.recomPost .name{
+		font-size: 16px;
+	}
+	.recomPost .details{
+		padding: 0 20px;
+	}
+	.recomPost .details h3{
+		font-size: 22px;		
+	}
+	.recomPost .details h3 span{
+		display: block;
+		margin: 0 auto 20px auto;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	.recomPost .time{
+		position: relative;
+		width: 45%;
+		height: 0px;
+		line-height: 3.5;
+		padding-bottom: 45%;
+		font-weight: 300;
+	}
+	.recomPost .time:before{
+		position: absolute;
+		content: '時間';
+		bottom: -40px;
+		left: 0;
+		right: 0;
+		color: rgba(255,255,255,.8);
+		font-size: 16px;
+	}
+	.recomPost .post:nth-of-type(1) .time{		
+		background-image: url("img/time1.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.recomPost .post:nth-of-type(2) .time{		
+		background-image: url("img/time2.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.recomPost .post:nth-of-type(3) .time{		
+		background-image: url("img/time3.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.recomPost .num{
+		position: relative;
+		float: right;
+		width: 45%;
+		height: 0px;
+		padding-bottom: 45%;
+		line-height: 3.5;
+		font-weight: 300;
+	}
+	.recomPost .num:before{
+		position: absolute;
+		content: '人數';
+		bottom: -40px;
+		left: 0;
+		right: 0;
+		color: rgba(255,255,255,.8);
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.recomPost .post:nth-of-type(1) .num{		
+		background-image: url("img/num1.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.recomPost .post:nth-of-type(2) .num{		
+		background-image: url("img/num2.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.recomPost .post:nth-of-type(3) .num{		
+		background-image: url("img/num3.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+@media screen and (max-width: 767px){
+	.recomPost{
+		display: none;
+	}
+}
+
+
+	.filterBox{
+		max-width: 1100px;
+		margin: 150px auto;
+		text-align: center;
+	}
+	.filter .postPost{		
+		margin: 50px 10px ;
+		border: 1px solid rgba(255,255,255,.6);
+		background-color: transparent;
+		color: rgba(255,255,255,.8);
+		font-size: 16px;
+	}
+	.filter .postPost a{		
+		display: block;
+		padding: 5px 10px;
+	}
+	.filter select{
+
+		height: 37px;
+		padding: 5px 10px;
+		margin: 50px 5px ;
+		border: 1px solid rgba(255,255,255,.6);
+		background-color: transparent;
+		color: rgba(255,255,255,.8);
+		font-size: 16px;
+	}
+	.filter option{
+		background-color: #040d22;
+		color: rgba(255,255,255,.8);
+	}
+	.filterBox .findPost{
+		margin: 50px 10px;
+		/*padding: 5px 10px;*/
+		border: 1px solid rgba(255,255,255,.6);
+		background-color: transparent;
+		color: rgba(255,255,255,.8);
+		font-size: 16px;
+	}
+	.filterBox .findPost a{
+		display: block;
+		padding: 5px 10px;
+
+	}
+	#number{
+		width: 80px;
+	}
+@media screen and (max-width: 992px){	
+	.filterBox{
+		position: relative;
+	}
+	.filter .postPost{	
+		position: absolute;	
+		width: 100px;
+		top: -50%;
+		left: 10%;
+		margin: 50px 10px ;
+	}
+	.filterBox .findPost{
+		position: absolute;
+		width: 100px;
+		bottom: -50%;
+		right: 50%;
+		transform: translateX(50%);
+		margin: 100px auto 0;
+	}
+	
+}
+@media screen and (max-width: 767px){
+	.filterBox{
+		position: relative;
+	}
+	.filter .postPost{	
+		position: absolute;	
+		width: 100px;
+		top: -40%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 50px 10px;
+	}
+	.filterBox .findPost{
+		position: absolute;
+		width: 100px;
+		bottom: -20%;
+		right: 50%;
+		transform: translateX(50%);
+		margin: 50px auto 0;
+	}	
+	.filter select{
+		display: block;
+		width: 80%;
+		padding: 5px 10px;
+		margin: 10px auto ;
+	}
+	#number{
+		width: 80%;
+	}
+}
+
+
+
+	.postContainer{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.postContainer .post{
+		padding: 30px;
+	}
+	.postContainer .postLink{
+		display: block;
+		width: 100%;
+	}
+	.postContainer .pic{
+		position: relative;
+		width: 100%;
+		height: 45vh;
+		overflow: hidden;
+	}
+	.postContainer .pic:before{
+		position: absolute;
+		bottom: -300px;
+		left: 0;
+		right: 0;
+		content: attr(data-text);
+		width: 100%;
+		height: 80px;
+		transition: 1s;
+		background-color: rgba(0,0,0,.7);
+		line-height: 80px;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+	.postContainer .post:hover .pic:before{
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: #fff;
+	}
+	.postContainer .pic img{		
+		width: 100%;
+	}
+	.postContainer .info{
+		padding: 20px 0;
+		border: 2px solid rgba(255,255,255,.3);
+	}
+	.postContainer .post:hover .poster{
+		color: #fff;
+	}
+	.postContainer .person{
+		width: 40px;
+		height: 40px;
+		margin: 10px auto 0;
+	}
+	.postContainer .person img{
+		width: 100%;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+	.postContainer .name{
+		display: block;
+		font-size: 12px;
+		white-space: nowrap;
+		text-align: center;
+	}
+	.postContainer .details{
+		font-size: 14px;
+	}
+	.postContainer h4{
+		font-weight: 300;		
+	}
+	.postContainer h4 div{
+		margin: 5px 0;
+	}
+	.postContainer h4 span{
+		margin-left: 5px;
+	}
+@media screen and (max-width: 992px){	
+	.postContainer .pic{
+		height: 80vh;
+	}
+	.postContainer .pic:before{
+		bottom: 0px;
+		left: 0;
+		right: 0;
+	}
+	.postContainer h4 span{
+		color: #CA8A23;
+	}
+	
+}
+@media screen and (max-width: 767px){
+	.postContainer .pic{
+		height: 70vh;
+	}
+}

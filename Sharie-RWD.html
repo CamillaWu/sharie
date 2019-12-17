@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Examples</title>
+<link rel="stylesheet" type="text/css" href="Sharie-RWD.css">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script src="../jquery-3.2.1.min.js"></script> -->
+</head>
+<body>
+    	<header>
+    		<nav>			
+    			<div class="center clearfix">
+    						<div class="nav-logo">
+    							<a href="index.html">
+    								<figure class="logo">
+    									<img src="img/Logo.png" alt="#">	
+    								</figure>
+    							</a>
+    						</div>				
+    						<input type="checkbox" name="" id="menuControl">		
+    						<div class="mainMenu clearfix">
+    							<ul>
+    								<li class="title"><a data-hovertext="Sharie"
+    									href="Sharie-RWD.html">揪影趣</a></li>
+    								<li class="title"><a data-hovertext="Reviews" href="review-RWD.html">影評分享</a></li>
+    								<li class="title"><a data-hovertext="Movie" href="movie-info-RWD.html">電影資訊</a></li>
+    								<li class="title"><a data-hovertext="Cinemas" href="cinema-info-RWD.html">影院資訊</a></li>
+    								<li class="title"><a data-hovertext="AboutUs" href="aboutus-RWD.html">關於我們</a></li>
+    								<li><a href="#"><i class="fa fa-search" ria-hidden="true"></i></a></li>
+    								<li><a class="regi" href="#">註冊</a></li>
+    								<li><a class="login" href="#">登入</a></li>
+    							</ul>
+    						</div>
+    						<div class="rwdnav">
+    							<div class="rwdlogo">
+    								<a href="index.html"><img src="img/rwdlogo2.png"></a>
+    							</div>
+    							<div class="rightnav">
+    								<a href="#"><i class="fa fa-search" ria-hidden="true"></i></a>
+    							<label for="menuControl" class="menuLabel">	
+    							</label>
+    							</div>
+    						</div>
+    			</div>
+    		</nav>
+    	</header>
+	
+	
+	<h1>揪帖推薦</h1>
+
+	<section class="recomPost clearfix">
+		<div class="fixRecom">
+			<div class="post ph-12 tbv-4">
+				<a href="#" class="postLink">
+					<div class="pic" data-text="以你的名字呼喚我"><img src="img/callmebyyourname.jpg"></div>
+					<div class="info clearfix">
+						<div class="poster">
+							<a href="#">
+								<div class="person"><img src="img/person.png"></div>
+								<span class="name">Jimmy Chen</span>
+							</a>
+						</div>
+						<div class="details">
+							<h3>
+								<span>信義威秀影城</span>
+								<div class="time ph-6 tbv-6">8/3</div>
+								<div class="num ph-6 tbv-6">18</div>
+							</h3>
+						</div>
+					</div>
+				</a>
+			</div>		
+			<div class="post ph-12 tbv-4">
+				<a href="#" class="postLink">
+					<div class="pic" data-text="全面啟動"><img src="img/inception.png"></div>
+					<div class="info clearfix">
+						<div class="poster">
+							<a href="#">
+								<div class="person"><img src="img/person.png"></div>
+								<span class="name">松本喬治</span>
+							</a>
+						</div>
+						<div class="details">
+							<h3>
+								<span>南紡夢時代威秀影城</span>
+								<div class="time ph-6 tbv-6">7/24</div>
+								<div class="num ph-6 tbv-6">6</div>
+							</h3>
+						</div>
+					</div>
+				</a>
+			</div>		
+			<div class="post ph-12 tbv-4">
+				<a href="#" class="postLink">
+					<div class="pic" data-text="蜘蛛人:返校日"><img src="img/Spider-Man.png"></div>
+					<div class="info clearfix">
+						<div class="poster">
+							<a href="#">
+								<div class="person"><img src="img/person.png"></div>
+								<span class="name">花花</span>
+							</a>
+						</div>
+						<div class="details">
+							<h3>
+								<span>高雄大遠百威秀</span>
+								<div class="time ph-6 tbv-6">8/1</div>
+								<div class="num ph-6 tbv-6">5</div>
+							</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+		
+	<section class="filterBox">
+
+				<div class="box">
+					<div class="filter">
+						<button class="postPost">
+							<a href="#">發揪帖</a>
+						</button>
+
+						<select name="filter" id="type" >
+							<option value="option" selected>類型</option>
+							<option value="thriller">驚悚</option>
+							<option value="action">動作</option>
+							<option value="crime">犯罪</option>
+							<option value="adventure">冒險</option>
+							<option value="drama">劇情</option>
+							<option value="fantacy">奇幻</option>
+							<option value="sci-fi">科幻</option>
+							<option value="biography">傳記</option>
+							<option value="animate">動畫</option>
+							<option value="comedy">搞笑</option>
+							<option value="horror">恐怖</option>
+							<option value="romance">浪漫</option>
+						</select>
+						<select name="filter" id="name" >
+							<option value="filmName" selected>影片名稱</option>
+							<option value="lobster">龍蝦</option>
+							<option value="inception">全面啟動</option>
+							<option value="call me by your name">以你的名字呼喚我</option>
+							<option value="intouchables">逆轉人生</option>
+						</select>
+
+
+						<select name="filter" id="area" >
+							<option value="area" selected>地區</option>	
+
+						</select>
+
+
+						<select name="filter" id="gender">
+							<option value="gender" selected>性別</option>
+							<option value="male">男</option>
+							<option value="female">女</option>
+						</select>
+
+
+						<select name="filter" id="number">
+							<option value="number" selected>人數</option>
+							<option value="1">1人</option>
+							<option value="2">2人</option>
+							<option value="3">3人</option>
+							<option value="4">4人</option>
+							<option value="5">5人</option>
+							<option value="6">6人</option>
+							<option value="7">7人</option>
+							<option value="8">8人</option>
+							<option value="9">9人以上</option>
+						</select>
+
+
+						<select name="filter" id="sort">
+							<option value="sort" selected>排序方式</option>
+							<option value="time">發帖時間</option>
+							<option value="">熱門程度</option>
+						</select>
+
+						<button class="findPost">
+							<a href="#">找揪帖</a>
+						</button>
+
+				
+					</div>
+				</div>
+
+	</section>
+
+	<section class="postContainer">
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="謊言的烙印"><img src="img/jagten.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">Frankie Kay</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>7/26</span></div>
+							<div class="loc"><span>地點:</span><span>華納威秀</span></div>
+							<div class="num"><span>人數:</span><span>5</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="牠"><img src="img/it.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">Lueis Fang</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/3</span></div>
+							<div class="loc"><span>地點:</span><span>嘉義秀泰</span></div>
+							<div class="num"><span>人數:</span><span>10</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="蜘蛛人:返校日"><img src="img/Spider-Man.png"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">洪洪洪</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/15</span></div>
+							<div class="loc"><span>地點:</span><span>華威天母</span></div>
+							<div class="num"><span>人數:</span><span>7</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="龍蝦"><img src="img/lobster.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">方方土</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>6/29</span></div>
+							<div class="loc"><span>地點:</span><span>板橋大遠百威秀</span></div>
+							<div class="num"><span>人數:</span><span>2</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="謊言的烙印"><img src="img/jagten.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">BonBon</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/2</span></div>
+							<div class="loc"><span>地點:</span><span>朝代戲院</span></div>
+							<div class="num"><span>人數:</span><span>3</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="你的名字"><img src="img/Kimi no na wa..png"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">John4那麼可愛</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>7/24</span></div>
+							<div class="loc"><span>地點:</span><span>美麗華台茂</span></div>
+							<div class="num"><span>人數:</span><span>8</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="噩夢輓歌"><img src="img/Requiem for a Dream.png"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">Orz小歐</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>7/20</span></div>
+							<div class="loc"><span>地點:</span><span>萬代福戲院</span></div>
+							<div class="num"><span>人數:</span><span>6</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="玉子"><img src="img/okja.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">James Hey</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/4</span></div>
+							<div class="loc"><span>地點:</span><span>時代數位3D影城</span></div>
+							<div class="num"><span>人數:</span><span>2</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="逆轉人生"><img src="img/theintouchables.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">Camilla Wu</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/8</span></div>
+							<div class="loc"><span>地點:</span><span>台中站前秀泰</span></div>
+							<div class="num"><span>人數:</span><span>11</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="謊言的烙印"><img src="img/jagten.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">Oasis Lily</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>8/16</span></div>
+							<div class="loc"><span>地點:</span><span>彰化戲院</span></div>
+							<div class="num"><span>人數:</span><span>9</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="post ph-12 tbv-6 tbh-3">
+			<a href="#" class="postLink">
+				<div class="pic" data-text="逆轉人生"><img src="img/theintouchables.jpg"></div>
+				<div class="info clearfix">
+					<div class="poster ph-5 tbv-5">						
+							<div class="person"><img src="img/person.png"></div>
+							<span class="name">7777</span>						
+					</div>
+					<div class="details ph-7 tbv-7">
+						<h4>
+							<div class="time"><span>時間:</span><span>7/30</span></div>
+							<div class="loc"><span>地點:</span><span>南投戲院</span></div>
+							<div class="num"><span>人數:</span><span>5</span></div>
+						</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+</body>
+</html>
